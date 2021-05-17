@@ -1,0 +1,48 @@
+<DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo APNL" id="logo1">
+        <h1>L'Astro pour les nulls</h1>
+        <button class="menu">Accueil</button>
+    </header>
+    <div id="corps">
+        <h2>Inscription</h2>
+        <form id="form">
+            <div>
+                <table id="tab">
+                    <tr id="tr1">
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Date de naissance</th>
+                    </tr>
+                    <tr id="tr2">
+                        <td><input type="text" id ="nom" placeholder="Saisir un nom" required></td>
+                        <td><input type="text" id ="prenom" placeholder="Saisir un prenom" required></td>
+                        <td><input type="date" id ="date" value="2021-05-17"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="ajouter_supprimer">
+                <button type="reset" onClick="ajouter(event)">Ajouter</button>
+                <button type="reset" onClick="supprimer(event)">Supprimer</button>
+            </div>
+            <div>
+                <button>Valider</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div><img src="logo.png" alt="logo APNL" id="logo2"></div>
+        <div><a href="a_propos_de_nous.html" id="lien">À propos de nous</a></div>
+    </footer>
+    <script src="formulaire.js"></script>
+</body>
+</html>

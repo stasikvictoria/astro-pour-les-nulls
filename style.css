@@ -1,0 +1,84 @@
+#logo1{
+    width : 100px;
+    height : 100px;
+}
+
+#logo2{
+    width : 70px;
+    height : 70px;
+}
+
+h1{
+    font-family :monospace;
+    color : purple;
+}
+
+h2{
+    font-family :monospace;
+}
+
+header{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding : 10px;
+    background-color: white;
+}
+
+table{
+    border-collapse : collapse;
+}
+
+td{
+    border : solid purple;
+    padding : 10px;
+}
+
+#ajouter_supprimer{
+    padding : 10px;
+}
+
+.menu{
+    width : 100px;
+    height : 50px;
+    background-color: #ddd3ee;
+}
+
+body{
+    background-color: #ddd3ee;
+}
+
+th{
+    font-family :monospace;
+}
+
+button{
+    font-family :monospace;
+}
+
+footer{
+    display : flex;
+    flex-direction : column;
+    text-align : center;
+    background-color: white;
+    position : absolute;
+    bottom : 0;
+    width : 97%;
+    padding : 10px;
+}
+
+#corps{
+    display : flex;
+    justify-content : center;
+    flex-direction : column;
+    text-align : center;
+    align-items: center;
+}
+
+#lien{
+    font-family : monospace;
+    text-decoration : none;
+    color: purple;
+    font-size : large;
+}
+
