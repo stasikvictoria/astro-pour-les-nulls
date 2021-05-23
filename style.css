@@ -17,16 +17,29 @@ h2{
     font-family :monospace;
 }
 
+h3{
+    font-family : monospace;
+}
+
+h4{
+    font-family : monospace;
+}
+
 p{
     font-family: monospace;
+    margin-left : 10%;
+    margin-right : 10%;
+    font-size : large;
 }
 
 header{
     display : flex;
     justify-content : space-between;
     align-items : center;
-    padding : 10px;
     background-color: white;
+    width : 97.5%;
+    padding : 10px;
+    position : fixed;
 }
 
 table{
@@ -81,7 +94,8 @@ body{
     */
     /*background-color : radial-gradient(ellipse at bottom, #0D1E31 #111);*/
     /* définit comment gérer le dépassement du contenu d'un élément dans son bloc */
-    overflow : hidden;
+    /*overflow : hidden;*/
+    overflow-y: scroll;
 }
 
 .night{
@@ -218,10 +232,11 @@ footer{
     flex-direction : column;
     text-align : center;
     background-color: white;
-    position : absolute;
+    /*position : absolute;*/
     bottom : 0;
-    width : 97%;
+    width : 97.5%;
     padding : 10px;
+    position : fixed;
 }
 
 #corps{
@@ -230,6 +245,7 @@ footer{
     flex-direction : column;
     text-align : center;
     align-items: center;
+    padding-top : 10%;
 }
 
 #introduction{
@@ -247,4 +263,6 @@ footer{
     font-size : large;
     cursor: pointer;
 }
+
+
 
