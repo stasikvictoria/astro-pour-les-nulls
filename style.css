@@ -264,5 +264,9 @@ footer{
     cursor: pointer;
 }
 
+.cacher{
+    display : none;
+}
+
 
 

@@ -35,6 +35,71 @@ function supprimer(event) {
     }
 }
 
+function valider(event){
+    event.preventDefault()
+    const lignes = document.getElementById("tab").rows 
+    let tab_mois = new Array(lignes.length - 2)
+    let tab_jours = new Array(lignes.length - 2)
+    let tab_prenoms = new Array(lignes.length - 2)
+    let tab_noms = new Array(lignes.length - 2)
+    const longueur = lignes.length
+    for(let i=2; i<longueur; i++)
+    {
+        let colonnes = lignes[i].cells
+        let largeur = colonnes.length
+
+        for(let j=0; j<largeur; j++)
+        {
+            if(j == 0){
+                let n = colonnes[0].innerHTML
+                tab_noms.push(n)
+            }
+            else if(j == 1){
+                let p = colonnes[1].innerHTML
+                tab_prenoms.push(p)
+            }
+            else if(j == 2){
+                let cellule = colonnes[2].innerHTML
+                let annee = cellule[0] + cellule[1] + cellule[2] + cellule[3]
+                let mois = cellule[5] + cellule[6]
+                let jour = cellule[8] + cellule[9]
+                tab_mois.push(mois)
+                tab_jours.push(jour)
+            }
+        }
+    }
+    const signe = "lol" 
+    window.open("belier.html")
+    if(tab_mois[0] == "03"){
+        console.log("yess")
+        if(jour <= 20){
+            signe = "poisson"
+        }
+        else{
+            signe = "belier"
+        }
+    }
+    console.log(signe)
+}
+
+
+
+function showUsers(){
+    document.querySelector("#utilisateurs").className = 'afficher'
+    document.querySelector("#taches").className = 'cacher'
+}
+
+function showTasks(){
+    document.querySelector("#utilisateurs").className = 'cacher'
+    document.querySelector("#taches").className = 'afficher'
+}
+ 
+     
+ 
+ 
+    
+
+
 
 
 
