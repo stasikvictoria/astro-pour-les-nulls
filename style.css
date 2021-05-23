@@ -17,6 +17,10 @@ h2{
     font-family :monospace;
 }
 
+p{
+    font-family: monospace;
+}
+
 header{
     display : flex;
     justify-content : space-between;
@@ -39,13 +43,35 @@ td{
 }
 
 .menu{
-    width : 100px;
-    height : 50px;
+    /*https://codepen.io/woolandcotton/pen/mBmLwq*/
+    font-family : monospace;
+    text-decoration : none;
+    width: 170px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    border: 3px solid purple;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: purple;
 }
+
+.menu:hover {
+    box-shadow: 0 0 10px 0 purple inset, 0 0 20px 2px purple;
+    border: 3px solid purple;
+  }
 
 body{
     background-color: #ddd3ee;
-
     /* vh signifie vieport height, avec viewport, ce qui est actuellement visible dans la fenêtre */
     height : 100vh;
     /*
@@ -207,6 +233,8 @@ footer{
 }
 
 #introduction{
+    margin-left : 15%;
+    margin-right : 15%;
     font-family :monospace;
     font-size : x-large;
     margin-top : 50px;
@@ -214,8 +242,9 @@ footer{
 
 #lien{
     font-family : monospace;
-    text-decoration : none;
+    /*text-decoration : none;*/
     color: purple;
     font-size : large;
+    cursor: pointer;
 }
 
