@@ -381,16 +381,3 @@ function valider(event){
         })
     })
 }
-
- 
-     
- 
- 
-    
-
-
-
-
-
-
-

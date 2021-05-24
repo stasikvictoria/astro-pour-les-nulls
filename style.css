@@ -8,6 +8,11 @@
     height : 70px;
 }
 
+.signe{
+    width : 100px;
+    height : 100px;
+}
+
 h1{
     font-family :monospace;
     color : purple;
@@ -15,6 +20,7 @@ h1{
 
 h2{
     font-family :monospace;
+    color : purple;
 }
 
 h3{
@@ -259,7 +265,7 @@ button{
     flex-direction : column;
     text-align : center;
     align-items: center;
-    padding-top : 15%;
+    padding-top : 20%;
 }
 
 #contenue_accueil{
@@ -291,7 +297,7 @@ button{
 }
 
 #horoscope{
-    padding-bottom : 10%;
+    padding-bottom : 20%;
 }
 
 
