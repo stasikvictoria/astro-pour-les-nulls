@@ -37,6 +37,13 @@ function supprimer(event) {
 
 function valider(event){
     event.preventDefault()
+
+    let nom = document.getElementById("nom").value
+    let prenom = document.getElementById("prenom").value
+    if(nom=="" || prenom==""){
+        alert("Veullez remplir le formulaire avant de valider!")
+    }
+
     const lignes = document.getElementById("tab").rows 
     let tab_mois = new Array(lignes.length - 2)
     let tab_jours = new Array(lignes.length - 2)
