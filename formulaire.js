@@ -68,9 +68,141 @@ function valider(event){
             }
         }
     }
+
+    tab_mois.forEach(function(mois){
+        tab_jours.forEach(function(jour){
+            if (mois == "01"){
+                if(jour == "01" || jour == "02" || jour == "03" || jour == "04" || jour == "05" || jour == "06" || jour == "07" || jour == "08" || jour == "09" || jour == "10" || jour == "11" || jour == "12" || jour == "13" || jour == "14" || jour == "15" || jour == "16" || jour == "17" || jour == "18" || jour == "19" || jour == "20"){
+                    //Capricorne
+                    document.querySelector("#capricorne").className = 'afficher'
+                }
+                else{
+                    //Verseau
+                    document.querySelector("#verseau").className = 'afficher'
+                } 
+            }
+            else if (mois == "02"){
+                if(jour == "01" || jour == "02" || jour == "03" || jour == "04" || jour == "05" || jour == "06" || jour == "07" || jour == "08" || jour == "09" || jour == "10" || jour == "11" || jour == "12" || jour == "13" || jour == "14" || jour == "15" || jour == "16" || jour == "17" || jour == "18" || jour == "19"){
+                    //Verseau
+                    document.querySelector("#verseau").className = 'afficher'
+                }
+                else{
+                    //Poisson
+                    document.querySelector("#poisson").className = 'afficher'
+                } 
+            }
+            else if (mois == "03"){
+                if(jour == "01" || jour == "02" || jour == "03" || jour == "04" || jour == "05" || jour == "06" || jour == "07" || jour == "08" || jour == "09" || jour == "10" || jour == "11" || jour == "12" || jour == "13" || jour == "14" || jour == "15" || jour == "16" || jour == "17" || jour == "18" || jour == "19" || jour == "20"){
+                    //Poisson
+                    document.querySelector("#poisson").className = 'afficher'
+                }
+                else{
+                    //Belier
+                    document.querySelector("#belier").className = 'afficher'
+                }  
+            }
+            else if (mois == "04"){
+                if(jour == "01" || jour == "02" || jour == "03" || jour == "04" || jour == "05" || jour == "06" || jour == "07" || jour == "08" || jour == "09" || jour == "10" || jour == "11" || jour == "12" || jour == "13" || jour == "14" || jour == "15" || jour == "16" || jour == "17" || jour == "18" || jour == "19" || jour == "20"){
+                    //Belier
+                    document.querySelector("#belier").className = 'afficher'
+                }
+                else{
+                    //Taureau
+                    document.querySelector("#taureau").className = 'afficher'
+                }  
+            }
+            else if (mois == "05"){
+                if(jour == "01" || jour == "02" || jour == "03" || jour == "04" || jour == "05" || jour == "06" || jour == "07" || jour == "08" || jour == "09" || jour == "10" || jour == "11" || jour == "12" || jour == "13" || jour == "14" || jour == "15" || jour == "16" || jour == "17" || jour == "18" || jour == "19" || jour == "20"){
+                    //Taureau
+                    document.querySelector("#taureau").className = 'afficher'
+                }
+                else{
+                    //Gemeaux
+                    document.querySelector("#gemeaux").className = 'afficher'
+                } 
+            }
+            else if (mois == "06"){
+                if(jour == "01" || jour == "02" || jour == "03" || jour == "04" || jour == "05" || jour == "06" || jour == "07" || jour == "08" || jour == "09" || jour == "10" || jour == "11" || jour == "12" || jour == "13" || jour == "14" || jour == "15" || jour == "16" || jour == "17" || jour == "18" || jour == "19" || jour == "20" || jour == "21"){
+                    //Gemeaux
+                    document.querySelector("#gemeaux").className = 'afficher'
+                }
+                else{
+                    //Cancer
+                    document.querySelector("#cancer").className = 'afficher'
+                }  
+            }
+            else if (mois == "07"){
+                if(jour == "01" || jour == "02" || jour == "03" || jour == "04" || jour == "05" || jour == "06" || jour == "07" || jour == "08" || jour == "09" || jour == "10" || jour == "11" || jour == "12" || jour == "13" || jour == "14" || jour == "15" || jour == "16" || jour == "17" || jour == "18" || jour == "19" || jour == "20" || jour == "21" || jour == "22" || jour == "23"){
+                    //Cancer
+                    document.querySelector("#cancer").className = 'afficher'
+                }
+                else{
+                    //Lion
+                    document.querySelector("#lion").className = 'afficher'
+                } 
+            }
+            else if (mois == "08"){
+                if(jour == "01" || jour == "02" || jour == "03" || jour == "04" || jour == "05" || jour == "06" || jour == "07" || jour == "08" || jour == "09" || jour == "10" || jour == "11" || jour == "12" || jour == "13" || jour == "14" || jour == "15" || jour == "16" || jour == "17" || jour == "18" || jour == "19" || jour == "20" || jour == "21" || jour == "22" || jour == "23"){
+                    //Lion
+                    document.querySelector("#lion").className = 'afficher'
+                }
+                else{
+                    //Vierge
+                    document.querySelector("#vierge").className = 'afficher'
+                }  
+            }
+            else if (mois == "09"){
+                if(jour == "01" || jour == "02" || jour == "03" || jour == "04" || jour == "05" || jour == "06" || jour == "07" || jour == "08" || jour == "09" || jour == "10" || jour == "11" || jour == "12" || jour == "13" || jour == "14" || jour == "15" || jour == "16" || jour == "17" || jour == "18" || jour == "19" || jour == "20" || jour == "21" || jour == "22" || jour == "23"){
+                    //Vierge
+                    document.querySelector("#vierge").className = 'afficher'
+                }
+                else{
+                    //Balance
+                    document.querySelector("#balance").className = 'afficher'
+                } 
+            }
+            else if (mois == "10"){
+                if(jour == "01" || jour == "02" || jour == "03" || jour == "04" || jour == "05" || jour == "06" || jour == "07" || jour == "08" || jour == "09" || jour == "10" || jour == "11" || jour == "12" || jour == "13" || jour == "14" || jour == "15" || jour == "16" || jour == "17" || jour == "18" || jour == "19" || jour == "20" || jour == "21" || jour == "22" || jour == "23"){
+                    //Balance
+                    document.querySelector("#balance").className = 'afficher'
+                }
+                else{
+                    //Scorpion
+                    document.querySelector("#scorpion").className = 'afficher'
+                }  
+            }
+            else if (mois == "11"){
+                if(jour == "01" || jour == "02" || jour == "03" || jour == "04" || jour == "05" || jour == "06" || jour == "07" || jour == "08" || jour == "09" || jour == "10" || jour == "11" || jour == "12" || jour == "13" || jour == "14" || jour == "15" || jour == "16" || jour == "17" || jour == "18" || jour == "19" || jour == "20" || jour == "21" || jour == "22"){
+                    //Scorpion
+                    document.querySelector("#scorpion").className = 'afficher'
+                }
+                else{
+                    //Sagittaire
+                    document.querySelector("#sagittaire").className = 'afficher'
+                }  
+            }
+            else if (mois == "12"){
+                if(jour == "01" || jour == "02" || jour == "03" || jour == "04" || jour == "05" || jour == "06" || jour == "07" || jour == "08" || jour == "09" || jour == "10" || jour == "11" || jour == "12" || jour == "13" || jour == "14" || jour == "15" || jour == "16" || jour == "17" || jour == "18" || jour == "19" || jour == "20"){
+                    //Sagittaire
+                    document.querySelector("#sagittaire").className = 'afficher'
+                }
+                else{
+                    //Capricorne
+                    document.querySelector("#capricorne").className = 'afficher'
+                }  
+            }
+        })
+    })
+    
+    /*
+    for(let i = 0; i < tab_jours.length; i++){
+        console.log(tab_jours[i]);
+    }
+    */
+
     const signe = "lol" 
-    window.open("belier.html")
-    if(tab_mois[0] == "03"){
+    //window.open("belier.html")
+    if(tab_mois[0] == '05'){
         console.log("yess")
         if(jour <= 20){
             signe = "poisson"
