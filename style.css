@@ -45,7 +45,7 @@ header{
     background-color: white;
     width : 97.5%;
     padding : 10px;
-    position : fixed;
+    /*position : fixed;*/
 }
 
 table{
@@ -301,4 +301,21 @@ button{
 }
 
 
+.page_oracle{
+    padding: 30px ;
+}
+
+.page_oracle div{
+    margin: 10px;
+}
+
+.page_oracle div p {
+    margin : 20px 30px ; 
+}
+
+#champ_question{
+    width: 70% ;
+    height: 60px ;
+    font-size: larger;
+}
 
