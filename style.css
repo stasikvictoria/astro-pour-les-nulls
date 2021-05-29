@@ -45,7 +45,7 @@ header{
     background-color: white;
     width : 97.5%;
     padding : 10px;
-    /*position : fixed;*/
+    position : fixed;
 }
 
 table{
@@ -302,7 +302,7 @@ button{
 
 
 .page_oracle{
-    padding: 30px ;
+    padding: 20% ;
 }
 
 .page_oracle div{
@@ -317,5 +317,18 @@ button{
     width: 70% ;
     height: 60px ;
     font-size: larger;
+    display : block ; 
+    margin : 15px 0 ; 
 }
 
+.presentation_oracle ~ div {
+    display : none ; 
+}
+
+.UserReponse {
+    background-color: beige ;
+}
+
+.UserQuestion{
+    background-color: #cc5fff ;
+}
