@@ -36,10 +36,11 @@
         
         <div class="question_oracle"> 
             <p>C'est le moment de nous poser votre question. Pensez y très fort dans votre tête et entrez-la dans le cadre ci-dessous. </p>
-            <input type="text" id ="champ_question" placeholder="Entrer votre question" required>
+            <input type="text" id ="champ_question" placeholder="Entrer votre question" required pattern="[A-Za-z]+" >
             
+            <p id="NoQuestion"> Vous n'avez pas entré de question. </p> 
             <button id="effacer" type="button" onClick="effacer_champQ()" > Effacer </button>
-            <button id="confirmer" type="button" onClick="getReponse()"> Confirmer </button>
+            <button id="confirmer" type="button" onClick="reponse()"> Confirmer </button>
         </div>
 
         <div class="reponse_oracle">
