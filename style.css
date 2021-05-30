@@ -239,7 +239,7 @@ button{
     flex-direction : column;
     text-align : center;
     background-color: white;
-    position : fixed;
+    /*position : fixed; */
     bottom : 0;
     left : 0;
     right : 0;
@@ -256,7 +256,7 @@ button{
     left : 0;
     right : 0;
     padding : 10px;
-    position : fixed;
+    /*position : fixed;*/
 }
 
 #corps{
@@ -301,6 +301,10 @@ button{
 }
 
 
+
+
+/*ORACLE*/
+
 .page_oracle{
     padding: 20% ;
 }
@@ -341,3 +345,70 @@ button{
     color :brown ; 
     display : none ; 
 }
+
+
+
+/*A PROPOS DE NOUS*/
+
+
+
+.a_propos{
+    padding : 12% ; 
+    background-color: rgb(218, 201, 252);
+}
+
+.equipe_im{
+    width: 40% ;
+    height: auto ;
+    
+}
+
+.equipe_prenom{
+    list-style: none;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 7%;
+    padding: 0%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;  
+}
+
+.equipe div{
+    display: flex;
+    text-align: center;
+    padding-left: 10% ;
+    padding-bottom: 2%;
+}
+
+.equipe {
+    display : flex ; 
+    text-align: center ;
+}
+
+/*
+h1{ 
+    text-align: center ;
+    font-size: 70px;
+}
+
+h2{
+
+    color :white ; 
+    text-align: center ;
+    padding : 20 0 ;
+    font-size : 30px;
+    background-color: rgb(148, 93, 199);
+    margin : 90 150 30 ; 
+    border-radius: 20px;
+}
+
+p{
+    font-size:15px ; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding : 0 40 ; 
+    line-height: 1.4;
+    text-align: justify ;
+
+}
+*/
