@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header>
+        <div><img src="logo.png" alt="logo APNL" id="logo1"></div>
+        <div><h1>L'Astro pour les nulls</h1></div>
+        <div>
+            <a href="" class ="menu">L'oracle</a>
+            <a href="formulaire.html" class ="menu">L'horoscope</a>
+        </div>
+    </header>
+    <div class="page_oracle">
+        <div class="presentation_oracle">
+            <p> Bienvenue sur la page oracle. Notre oracle va répondre à toutes vos questions bien posées. Suivez la démarche ci-dessous, posez votre question, et découvrez la prédiction. </p>
+
+            <button id='suivant' onClick="showRegles()"> Suivant </button>
+        </div>
+
+        <div class ="regles_oracle" >
+            <p>Cher ami, avant de commencer, permettez-nous de vous donner quelques conseils. </p>
+            <ol>
+                <li> Notre oracle est à titre indicative, elle ne vous donnera pas de réponse exacte, mais une indication que vous devriez interpréter selon votre question.  </li>
+                <li> L'oracle ne peut pas donner de réponse quantitative. Par exemple la question "Quelle note aurons-nous pour le projet web ?" ne fonctionne pas. </li>
+            </ol>
+            <p> Si vous êtes prêts, c'est parti ... </p>
+
+            <button onClick="showQuestion()"> J'ai compris </button>
+        </div>
+        
+        <div class="question_oracle"> 
+            <p>C'est le moment de nous poser votre question. Pensez y très fort dans votre tête et entrez-la dans le cadre ci-dessous. </p>
+            <input type="text" id ="champ_question" placeholder="Entrer votre question" required pattern="[A-Za-z]+" >
+            
+            <p id="NoQuestion"> Vous n'avez pas entré de question. </p> 
+            <button id="effacer" type="button" onClick="effacer_champQ()" > Effacer </button>
+            <button id="confirmer" type="button" onClick="reponse()"> Confirmer </button>
+        </div>
+
+        <div class="reponse_oracle">
+            <button id="restart" onClick = "restart()"> Recommencer </button>
+        </div>
+    </div>
+
+    <footer id = "footer_formulaire">
+        <div><img src="logo.png" alt="logo APNL" id="logo2"></div>
+        <div><a href="a_propos_de_nous.html" id="lien">À propos de nous</a></div>
+        <p>© 2021 par STASIK Victoria et WANG Justine</p>
+    </footer>
+    <script src="oracle.js"></script>
+</body>
+</html>
