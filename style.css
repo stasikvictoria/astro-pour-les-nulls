@@ -55,8 +55,8 @@ header{
     justify-content : space-between;
     align-items : center;
     background-color: white;
-    width : 97.5%;
-    padding : 10px;
+    width : 100%;
+    padding : 10px 10px;
     position : fixed;
 }
 
@@ -73,6 +73,9 @@ header{
     font-weight: 600;
     margin-left: 30px;
     margin-bottom: 30px;
+    margin-right: 20px; 
+    margin-top: 10px;
+    margin : 20px 30px; 
     cursor: pointer;
     display: inline-block;
     background-color: transparent;
@@ -136,12 +139,14 @@ body{
     height : 100vh;
 }
 
-.body_formulaire{
+#body_formulaire{
     overflow-y: scroll;
+    margin : 0 ;
 }
 
 #body_accueil{
     overflow-y: hidden;
+    margin : 0 ; 
 }
 
 #corps{
@@ -290,7 +295,7 @@ body{
 
 /* FOOTER */
 
-#footer_formulaire{
+.footer {
     display : flex;
     flex-direction : column;
     text-align : center;
@@ -301,17 +306,6 @@ body{
     right : 0;
 }
 
-#footer_accueil{
-    display : flex;
-    flex-direction : column;
-    text-align : center;
-    background-color: white;
-    bottom : 0;
-    left : 0;
-    right : 0;
-    padding : 10px;
-    /*position : fixed;*/
-}
 
 /* ACCUEIL */
 
@@ -331,7 +325,6 @@ marquee{
     background-color: #ddd3ee;
     padding-bottom: 15%;
 }
-
 
 
 
@@ -383,8 +376,6 @@ marquee{
 
 
 /*A PROPOS DE NOUS*/
-
-
 
 .a_propos{
     padding : 12% ; 
