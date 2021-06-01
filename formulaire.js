@@ -98,6 +98,7 @@ function valider(event){
                                     document.querySelector("#titre_capricorne").textContent = prenom + " " + nom + " vous êtes Capricorne !"
                                 }
                                 document.querySelector("#capricorne").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }
                             else{
                                 //Verseau
@@ -109,6 +110,7 @@ function valider(event){
                                     document.querySelector("#titre_verseau").textContent = prenom + " " + nom + " vous êtes Verseau !"
                                 }
                                 document.querySelector("#verseau").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             } 
                         }
                         else if (mois == "02"){
@@ -122,6 +124,7 @@ function valider(event){
                                     document.querySelector("#titre_verseau").textContent = prenom + " " + nom + " vous êtes Verseau !"
                                 }
                                 document.querySelector("#verseau").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }
                             else{
                                 //Poisson
@@ -133,6 +136,7 @@ function valider(event){
                                     document.querySelector("#titre_poisson").textContent = prenom + " " + nom + " vous êtes Poisson !"
                                 }
                                 document.querySelector("#poisson").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             } 
                         }
                         else if (mois == "03"){
@@ -146,6 +150,7 @@ function valider(event){
                                     document.querySelector("#titre_poisson").textContent = prenom + " " + nom + " vous êtes Poisson !"
                                 }
                                 document.querySelector("#poisson").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }
                             else{
                                 //Belier
@@ -157,6 +162,7 @@ function valider(event){
                                     document.querySelector("#titre_belier").textContent = prenom + " " + nom + " vous êtes Belier !"
                                 }
                                 document.querySelector("#belier").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }  
                         }
                         else if (mois == "04"){
@@ -170,6 +176,7 @@ function valider(event){
                                     document.querySelector("#titre_belier").textContent = prenom + " " + nom + " vous êtes Belier !"
                                 }
                                 document.querySelector("#belier").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }
                             else{
                                 //Taureau
@@ -181,6 +188,7 @@ function valider(event){
                                     document.querySelector("#titre_taureau").textContent = prenom + " " + nom + " vous êtes Taureau !"
                                 }
                                 document.querySelector("#taureau").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }  
                         }
                         else if (mois == "05"){
@@ -194,6 +202,7 @@ function valider(event){
                                     document.querySelector("#titre_taureau").textContent = prenom + " " + nom + " vous êtes Taureau !"
                                 }
                                 document.querySelector("#taureau").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }
                             else{
                                 //Gemeaux
@@ -205,6 +214,7 @@ function valider(event){
                                     document.querySelector("#titre_gemeaux").textContent = prenom + " " + nom + " vous êtes Gemeaux !"
                                 }
                                 document.querySelector("#gemeaux").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             } 
                         }
                         else if (mois == "06"){
@@ -218,6 +228,7 @@ function valider(event){
                                     document.querySelector("#titre_gemeaux").textContent = prenom + " " + nom + " vous êtes Gemeaux !"
                                 }
                                 document.querySelector("#gemeaux").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }
                             else{
                                 //Cancer
@@ -229,6 +240,7 @@ function valider(event){
                                     document.querySelector("#titre_cancer").textContent = prenom + " " + nom + " vous êtes Cancer !"
                                 }
                                 document.querySelector("#cancer").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }  
                         }
                         else if (mois == "07"){
@@ -242,6 +254,7 @@ function valider(event){
                                     document.querySelector("#titre_cancer").textContent = prenom + " " + nom + " vous êtes Cancer !"
                                 }
                                 document.querySelector("#cancer").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }
                             else{
                                 //Lion
@@ -253,6 +266,7 @@ function valider(event){
                                     document.querySelector("#titre_lion").textContent = prenom + " " + nom + " vous êtes Lion !"
                                 }
                                 document.querySelector("#lion").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             } 
                         }
                         else if (mois == "08"){
@@ -266,6 +280,7 @@ function valider(event){
                                     document.querySelector("#titre_lion").textContent = prenom + " " + nom + " vous êtes Lion !"
                                 }
                                 document.querySelector("#lion").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }
                             else{
                                 //Vierge
@@ -277,6 +292,7 @@ function valider(event){
                                     document.querySelector("#titre_vierge").textContent = prenom + " " + nom + " vous êtes Vierge !"
                                 }
                                 document.querySelector("#vierge").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }  
                         }
                         else if (mois == "09"){
@@ -290,6 +306,7 @@ function valider(event){
                                     document.querySelector("#titre_vierge").textContent = prenom + " " + nom + " vous êtes Vierge !"
                                 }
                                 document.querySelector("#vierge").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }
                             else{
                                 //Balance
@@ -301,6 +318,7 @@ function valider(event){
                                     document.querySelector("#titre_balance").textContent = prenom + " " + nom + " vous êtes Balance !"
                                 }
                                 document.querySelector("#balance").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             } 
                         }
                         else if (mois == "10"){
@@ -314,6 +332,7 @@ function valider(event){
                                     document.querySelector("#titre_balance").textContent = prenom + " " + nom + " vous êtes Balance !"
                                 }
                                 document.querySelector("#balance").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }
                             else{
                                 //Scorpion
@@ -325,6 +344,7 @@ function valider(event){
                                     document.querySelector("#titre_scorpion").textContent = prenom + " " + nom + " vous êtes Scorpion !"
                                 }
                                 document.querySelector("#scorpion").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }  
                         }
                         else if (mois == "11"){
@@ -338,6 +358,7 @@ function valider(event){
                                     document.querySelector("#titre_scorpion").textContent = prenom + " " + nom + " vous êtes Scorpion !"
                                 }
                                 document.querySelector("#scorpion").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }
                             else{
                                 //Sagittaire
@@ -349,6 +370,7 @@ function valider(event){
                                     document.querySelector("#titre_sagittaire").textContent = prenom + " " + nom + " vous êtes Sagittaire !"
                                 }
                                 document.querySelector("#sagittaire").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }  
                         }
                         else if (mois == "12"){
@@ -362,6 +384,7 @@ function valider(event){
                                     document.querySelector("#titre_sagittaire").textContent = prenom + " " + nom + " vous êtes Sagittaire !"
                                 }
                                 document.querySelector("#sagittaire").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }
                             else{
                                 //Capricorne
@@ -373,6 +396,7 @@ function valider(event){
                                     document.querySelector("#titre_capricorne").textContent = prenom + " " + nom + " vous êtes Capricorne !"
                                 }
                                 document.querySelector("#capricorne").className = 'afficher'
+                                document.querySelector("#sources").className = 'afficher'
                             }  
                         }
                     }

@@ -1,3 +1,4 @@
+/* GENERAL */
 #logo1{
     width : 100px;
     height : 100px;
@@ -38,6 +39,17 @@ p{
     font-size : large;
 }
 
+#lien{
+    font-family : monospace;
+    /*text-decoration : none;*/
+    color: purple;
+    font-size : large;
+    cursor: pointer;
+}
+
+
+/* HEADER */
+
 header{
     display : flex;
     justify-content : space-between;
@@ -48,21 +60,7 @@ header{
     position : fixed;
 }
 
-table{
-    border-collapse : collapse;
-}
-
-td{
-    border : solid purple;
-    padding : 10px;
-}
-
-#ajouter_supprimer{
-    padding : 10px;
-}
-
 .menu{
-    /*https://codepen.io/woolandcotton/pen/mBmLwq*/
     font-family : monospace;
     text-decoration : none;
     width: 170px;
@@ -70,6 +68,7 @@ td{
     padding-bottom: 30px;
     text-align: center;
     color: #000;
+    /*lettres capitales*/
     text-transform: uppercase;
     font-weight: 600;
     margin-left: 30px;
@@ -79,30 +78,83 @@ td{
     background-color: transparent;
     border: 3px solid purple;
     border-radius: 50px;
+    /*pour les transition*/
+    /*ease-in-out signifie que le début et la fin sont lents*/
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
     color: purple;
 }
 
+/*effet neon*/
+ /*https://codepen.io/woolandcotton/pen/mBmLwq*/
 .menu:hover {
     box-shadow: 0 0 10px 0 purple inset, 0 0 20px 2px purple;
     border: 3px solid purple;
-  }
+}
+
+/* FORMULAIRE */
+
+table{
+    border-collapse : collapse;
+}
+
+td{
+    border : solid purple;
+    padding : 10px;
+}
+
+th{
+    font-family :monospace;
+}
+
+#ajouter_supprimer{
+    padding : 10px;
+}
+
+button{
+    font-family :monospace;
+}
+
+.cacher{
+    display : none;
+}
+
+.afficher{
+    display : block;
+}
+
+#horoscope{
+    padding-bottom : 20%;
+}
+
+
+/* BODY */
 
 body{
     background-color: #ddd3ee;
     /* vh signifie vieport height, avec viewport, ce qui est actuellement visible dans la fenêtre */
     height : 100vh;
-    /*
-    display : flex;
-    justify-content : center;
-    align-items : center;
-    */
-    /*background-color : radial-gradient(ellipse at bottom, #0D1E31 #111);*/
-    /* définit comment gérer le dépassement du contenu d'un élément dans son bloc */
-    /*overflow : hidden;*/
+}
+
+.body_formulaire{
     overflow-y: scroll;
 }
+
+#body_accueil{
+    overflow-y: hidden;
+}
+
+#corps{
+    display : flex;
+    justify-content : center;
+    flex-direction : column;
+    text-align : center;
+    align-items: center;
+    padding-top : 10%;
+}
+
+/* EFFET ETOILE*/
+/*https://www.youtube.com/watch?v=Kf4BP-WLkVs*/
 
 .sky{
     margin-left : 2%;
@@ -122,10 +174,12 @@ body{
     border-radius : 999px;
     /* permet d'appliquer une ombre portée sur une image */
     filter : drop-shadow(0 0 6px #cc5fff);
+    /*animation infinie des étoiles*/
     animation : tail 3s ease-in-out infinite,
                 falling 3s ease-in-out infinite;
 }
 
+/* @keyframe permet de définir les étapes qui composent la séquence d'une animation*/
 @keyframes tail{
     0%{
         width : 0px;
@@ -147,9 +201,11 @@ body{
     }
 }
 
+/*::before permet d'ajouter qq chose avant les étoiles*/
 .star::before, .star::after{
     content : '';
     position : absolute; 
+    /* calc permet de réaliser des calculs pour déterminer la valeur d'une propriété CSS*/
     top : calc(50% - 2px);
     right : 0;
     height : 4px;
@@ -176,9 +232,11 @@ body{
     transform : translateX(50%) rotateZ(-45deg);
 }
 
+/*étoile 1*/
 .star:nth-child(1){
     top : calc(50% - 100px);
     left : calc(50% - 250px);
+    /*durée d'attente avant de démarrer une animation*/
     animation-delay: 1s;
 }
 
@@ -186,6 +244,7 @@ body{
     animation-delay : 1s;
 }
 
+/*étoile 2*/
 .star:nth-child(2){
     top : calc(50% - 50px);
     left : calc(50% - 200px);
@@ -196,6 +255,7 @@ body{
     animation-delay : 1.2s;
 }
 
+/*étoile 3*/
 .star:nth-child(3){
     top : calc(50% - 0px);
     left : calc(50% - 150px);
@@ -206,6 +266,7 @@ body{
     animation-delay : 1.4s;
 }
 
+/*étoile 4*/
 .star:nth-child(4){
     top : calc(50% - -50px);
     left : calc(50% - 200px);
@@ -216,6 +277,7 @@ body{
     animation-delay : 1.6s;
 }
 
+/*étoile 5*/
 .star:nth-child(5){
     top : calc(50% - -100px);
     left : calc(50% - 250px);
@@ -226,13 +288,7 @@ body{
     animation-delay : 1.8s;
 }
 
-th{
-    font-family :monospace;
-}
-
-button{
-    font-family :monospace;
-}
+/* FOOTER */
 
 #footer_formulaire{
     display : flex;
@@ -243,7 +299,6 @@ button{
     bottom : 0;
     left : 0;
     right : 0;
-    /*padding-top : 10px;*/
 }
 
 #footer_accueil{
@@ -251,7 +306,6 @@ button{
     flex-direction : column;
     text-align : center;
     background-color: white;
-    /*position : absolute;*/
     bottom : 0;
     left : 0;
     right : 0;
@@ -259,14 +313,7 @@ button{
     position : fixed;
 }
 
-#corps{
-    display : flex;
-    justify-content : center;
-    flex-direction : column;
-    text-align : center;
-    align-items: center;
-    padding-top : 20%;
-}
+/* ACCUEIL */
 
 #contenue_accueil{
     overflow-y: hidden;
@@ -277,28 +324,15 @@ button{
     margin-right : 15%;
     font-family :monospace;
     font-size : x-large;
-    /*margin-top : 50px;*/
 }
 
-#lien{
-    font-family : monospace;
-    /*text-decoration : none;*/
-    color: purple;
-    font-size : large;
-    cursor: pointer;
+/*defilement des signes astro*/
+marquee{
+    background-color: #ddd3ee;
+    padding-bottom: 15%;
 }
 
-.cacher{
-    display : none;
-}
 
-.afficher{
-    display : block;
-}
-
-#horoscope{
-    padding-bottom : 20%;
-}
 
 
 
